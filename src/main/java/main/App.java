@@ -13,10 +13,17 @@ public class App {
 
             if (scanner.hasNext()) {
                 int choice = 0;
-                String stringInput = scanner.nextLine();
-                choice = Integer.parseInt(stringInput);
-             
-
+                try {
+                    choice = scanner.nextInt();
+                    scanner.nextLine();  
+                } catch (InputMismatchException e) {
+                    System.out.println("Virheellinen syöte. Anna numero.");
+                    scanner.nextLine();  // Puhdista virheellinen syöte
+                    continue;  
+                }
+   
+            }
+            
             switch (choice) {
                 case 1:
                     System.out.println("Anna opiskelijan nimi?");
