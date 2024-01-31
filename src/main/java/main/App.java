@@ -33,7 +33,6 @@ public class App {
                     break;
             
                 case 3:
-                    System.out.println("Opiskelijat:");
                     List<Student> studentsForAddGrade = university.getStudents();
                     for (int i = 0; i < studentsForAddGrade.size(); i++) {
                         Student student = studentsForAddGrade.get(i);
