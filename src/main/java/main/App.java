@@ -36,10 +36,8 @@ public class App {
                     List<Student> studentsForAddGrade = university.getStudents();
                     for (int i = 0; i < studentsForAddGrade.size(); i++) {
                         Student student = studentsForAddGrade.get(i);
-                        System.out.println(i + ": " +
-                                student.getName());
+                        System.out.println(i + ": " + student.getName());
                                 
-                    
                     }
                     System.out.println("Mille opiskelijalle suorite lisätään?");
                     int studentIndex = scanner.nextInt();
@@ -57,8 +55,7 @@ public class App {
                     List<Student> studentsForListGrades = university.getStudents();
                     for (int i = 0; i < studentsForListGrades.size(); i++) {
                         Student student = studentsForListGrades.get(i);
-                        System.out.println(i + ": " + student.getStudentNumber() + ": " +
-                                student.getName());
+                        System.out.println(i + ": " + student.getName());
                     }
                 
                     System.out.println("Minkä opiskelijan suoritteet listataan?");
