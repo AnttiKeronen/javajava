@@ -36,7 +36,7 @@ public class App {
                     List<Student> studentsForAddGrade = university.getStudents();
                     for (int i = 0; i < studentsForAddGrade.size(); i++) {
                         Student student = studentsForAddGrade.get(i);
-                        System.out.println(i + ": " + student.getStudentNumber() + ": " +
+                        System.out.println(i + ": " +
                                 student.getName());
                                 
                     
