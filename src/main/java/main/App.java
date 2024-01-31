@@ -115,7 +115,7 @@ public class App {
 
                 case 0:
                     System.out.println("Kiitos ohjelman käytöstä.");
-                    System.exit(0);
+                    exit = true;
                     break;
 
                 default:
@@ -123,6 +123,7 @@ public class App {
                     break;
             }
         }
+        scanner.close();
     }
 }
 
