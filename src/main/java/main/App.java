@@ -54,7 +54,6 @@ public class App {
                     break;
 
                 case 4:
-                    System.out.println("Opiskelijat:");
                     List<Student> studentsForListGrades = university.getStudents();
                     for (int i = 0; i < studentsForListGrades.size(); i++) {
                         Student student = studentsForListGrades.get(i);
